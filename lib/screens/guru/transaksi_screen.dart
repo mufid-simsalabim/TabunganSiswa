@@ -152,7 +152,7 @@ class TransaksiScreen extends StatelessWidget {
                   foregroundColor: Colors.black,
                   minimumSize: const Size(double.infinity, 50),
                 ),
-                child: const Text("Transaksi Masuk"),
+                child: const Text("Masuk aldo"),
               ),
               const SizedBox(height: 20),
               ElevatedButton(
@@ -162,7 +162,7 @@ class TransaksiScreen extends StatelessWidget {
                   foregroundColor: Colors.black,
                   minimumSize: const Size(double.infinity, 50),
                 ),
-                child: const Text("Transaksi Tarik"),
+                child: const Text("Tarik Saldo"),
               ),
             ],
           ),

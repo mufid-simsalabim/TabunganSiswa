@@ -45,7 +45,7 @@ class _LoginGuruScreenState extends State<LoginGuruScreen>
 
     if (_formKey.currentState!.validate()) {
       // Dummy login logic (bisa diganti ke backend)
-      if (email == 'guru@gmail.com' && password == 'guru123') {
+      if (email == 'guru@gmail.com' && password == '123') {
         Navigator.pushNamed(context, '/guru/home');
       } else {
         ScaffoldMessenger.of(context).showSnackBar(

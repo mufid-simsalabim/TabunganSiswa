@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class DashboardAdminScreen extends StatelessWidget {
   const DashboardAdminScreen({super.key});
 
-  final String namaPengguna = "Admin Beben"; // nanti bisa diganti dinamis
+  final String namaPengguna = "Admin Beben"; // nanti bisa dinamis
 
   @override
   Widget build(BuildContext context) {
@@ -46,6 +46,7 @@ class DashboardAdminScreen extends StatelessWidget {
                 style: TextStyle(fontSize: 16, color: Colors.black54),
               ),
               const SizedBox(height: 30),
+
               ElevatedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, '/admin/kelola-siswa');
@@ -58,6 +59,20 @@ class DashboardAdminScreen extends StatelessWidget {
                 child: const Text("Kelola Data Siswa"),
               ),
               const SizedBox(height: 16),
+
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/admin/kelola-guru');
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green[300],
+                  foregroundColor: Colors.black,
+                  minimumSize: const Size(double.infinity, 50),
+                ),
+                child: const Text("Kelola Akun Guru"),
+              ),
+              const SizedBox(height: 16),
+
               ElevatedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, '/admin/riwayat');
@@ -70,6 +85,7 @@ class DashboardAdminScreen extends StatelessWidget {
                 child: const Text("Riwayat Transaksi"),
               ),
               const SizedBox(height: 16),
+
               ElevatedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, '/admin/laporan');
@@ -82,6 +98,7 @@ class DashboardAdminScreen extends StatelessWidget {
                 child: const Text("Laporan Transaksi"),
               ),
               const SizedBox(height: 16),
+
               ElevatedButton.icon(
                 onPressed: () {
                   Navigator.pushNamed(context, '/admin/cek-saldo');

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tabungan_siswa/screens/admin/admin_kelola_guru_screen.dart';
 import 'package:tabungan_siswa/screens/role_selector_screen.dart';
 import 'package:tabungan_siswa/screens/guru/login_guru_screen.dart';
 import 'package:tabungan_siswa/screens/admin/login_admin_screen.dart';
@@ -38,6 +39,8 @@ class MyApp extends StatelessWidget {
         '/guru/home': (context) => const GuruHomeScreen(),
         '/guru/cek-saldo': (context) => const CekSaldoScreen(),
         '/guru/laporan-harian': (context) => const GuruLaporanHarianScreen(),
+        '/admin/kelola-guru': (context) => const KelolaAkunGuruScreen(),
+        '/admin/cek-saldo': (context) => const CekSaldoScreen(),
       },
     );
   }

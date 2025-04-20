@@ -33,13 +33,13 @@ class _CekSaldoScreenState extends State<CekSaldoScreen>
 
   void _cekSaldo() {
     final input = _nisnController.text.trim();
-    if (input == '123456' || input.toLowerCase() == 'budi') {
+    if (input == '123' || input.toLowerCase() == 'budi') {
       setState(() {
         _errorMessage = null;
         _siswa = {
-          'nama': 'Budi Santoso',
+          'nama': 'puji subur',
           'kelas': '6A',
-          'nisn': '123456',
+          'nisn': '123',
           'saldo': 'Rp 500.000',
         };
         _controller.forward(from: 0);
@@ -134,9 +134,8 @@ class _CekSaldoScreenState extends State<CekSaldoScreen>
                       ),
                       child: const Text(
                         'Cek Saldo',
-                            style: TextStyle(
-                          color: Colors.black
-                        ),),
+                        style: TextStyle(color: Colors.black),
+                      ),
                     ),
                   ],
                 ),
